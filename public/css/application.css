@@ -1,0 +1,112 @@
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+  margin: 50px auto;
+  width: 1000px;
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+}
+
+.header-footer {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  clear: both;
+}
+
+nav ul {
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+a:visited {
+  color: black;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+input[type=submit] {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  width: 150px;
+}
+
+input {
+  display: block;
+  margin: auto;
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 2px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#link-disguise {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0px;
+  margin: 0px;
+  width: auto;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+#link-disguise:hover {
+  font-weight: bold;
+}
+
+#logout-form {
+  display: inline;
+}
+
+.error-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.errors {
+  text-align: center;
+  color: red;
+}
