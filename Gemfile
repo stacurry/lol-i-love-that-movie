@@ -15,6 +15,7 @@ gem 'rake'
 gem 'rack', '1.5.2'
 gem 'shotgun'
 gem 'bcrypt'
+gem 'nokogiri'
 
 group :test do
   gem 'shoulda-matchers'
