@@ -11,6 +11,17 @@ module MovieQuoteParser
     end
   end
 
+  def self.movie_title(url)
+    quote_search_results = Nokogiri::HTML(open(url))
+    movie_title = quote_search_results.css(".title").children[0].text
+
+    # if movie_show_page_link
+    #   movie_title = movie_show_page_link.text
+    # else
+    #   nil
+    # end
+  end
+
   def self.parse_quote_data(url)
     data = Nokogiri::HTML(open(url))
     quote_data = data.css(".sodatext")
