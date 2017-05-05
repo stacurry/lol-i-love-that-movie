@@ -14,23 +14,19 @@ module MovieQuoteParser
   def self.movie_title(url)
     quote_search_results = Nokogiri::HTML(open(url))
     movie_title = quote_search_results.css(".title").children[0].text
-
-    # if movie_show_page_link
-    #   movie_title = movie_show_page_link.text
-    # else
-    #   nil
-    # end
   end
 
   def self.parse_quote_data(url)
-    data = Nokogiri::HTML(open(url))
-    quote_data = data.css(".sodatext")
+    if url
+      data = Nokogiri::HTML(open(url))
+      quote_data = data.css(".sodatext")
 
-    quote_content_array = []
-    quote_data.each do |quote|
-      quote_content_array << quote.children.text.split("\n").reject { |i| i == "" }
+      quote_content_array = []
+      quote_data.each do |quote|
+        quote_content_array << quote.children.text.split("\n").reject { |i| i == "" }
+      end
+      quote_content_array
     end
-    quote_content_array
   end
 end
 
