@@ -2,24 +2,16 @@ $(document).ready(function() {
   $(".movie-quote-form").on("submit", function(event) {
     event.preventDefault();
 
-    var movieQuote = $(this).serialize();
+    var $movieQuoteForm = $(this)
 
     $.ajax({
-      method: "post",
-      url: "/",
-      data: movieQuote
+      method: $movieQuoteForm.attr("method"),
+      url: $movieQuoteForm.attr("action"),
+      data: $movieQuoteForm.serialize()
     }).done(function(response) {
       $(".quote-container").append(response);
       $(".movie-quote-form").hide();
       $(".search-again-button").show();
     });
   });
-
-
-
-
-
-
-
-
 });
