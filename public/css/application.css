@@ -1,19 +1,25 @@
 h1, h2 {
   text-align: center;
+  color: #991454;
+}
+
+h3 {
+  color: #1a1a1a;
+  font-style: italic;
 }
 
 .container {
-  margin: 50px auto;
-  width: 1000px;
+  margin: 100px auto;
+  width: 80%;
   padding: 0px 20px 20px 20px;
-  border: 1px solid black;
-  border-radius: 10px;
+
   display: block;
 }
 
 .header-footer {
   margin: 0px;
   padding: 0px;
+  background-color: #4483A5;
   list-style: none;
   clear: both;
 }
@@ -35,7 +41,7 @@ nav ul li a {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 a:hover {
@@ -43,14 +49,15 @@ a:hover {
 }
 
 a:visited {
-  color: black;
+  color: white;
 }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #4483A5;
+  background-color: #4483A5;
 }
 
 footer {
@@ -58,14 +65,16 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  border-top: 1px solid black;
+  border-top: 1px solid #4483A5;
+  color: #4483A5;
+  height: 33.33px;
 }
 
 input[type=submit] {
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #4483A5;
   border-radius: 10px;
-  background: black;
+  background: #4483A5;
   color: white;
   width: 150px;
 }
@@ -77,7 +86,7 @@ input {
   margin-bottom: 10px;
   padding: 2px;
   background: white;
-  border: 1px solid black;
+  border: 1px solid #1a1a1a;
   border-radius: 5px;
 }
 
@@ -89,7 +98,7 @@ input {
   margin: 0px;
   width: auto;
   text-decoration: none;
-  color: black;
+  color: white;
   display: inline-block;
 }
 
@@ -108,11 +117,12 @@ input {
 
 .errors {
   text-align: center;
-  color: red;
+  color: #991454;
+  padding-top: 5px;
 }
 
 .quote-wrapper {
-  border: 1px dotted black;
+  border: 1px dotted #1a1a1a;
   border-radius: 10px;
   margin-bottom: 10px;
   padding-left: 20px;
@@ -121,7 +131,6 @@ input {
 .character-name {
   font-weight: bold;
 }
-
 
 .quote-line {
   padding-left: 10px;
@@ -136,10 +145,10 @@ input {
   width: 160px;
   margin: auto;
   margin-bottom: 20px;
-  border: 1px solid black;
+  border: 1px solid #4483A5;
   border-radius: 10px;
   text-align: center;
-  background-color: black;
+  background-color: #4483A5;
 }
 
 .search-again-button a {
