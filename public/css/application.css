@@ -110,3 +110,44 @@ input {
   text-align: center;
   color: red;
 }
+
+.quote-wrapper {
+  border: 1px dotted black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.character-name {
+  font-weight: bold;
+}
+
+
+.quote-line {
+  padding-left: 10px;
+}
+
+.context-line {
+  font-style: italic;
+  padding-left: 10px;
+}
+
+.search-again-button {
+  width: 160px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: black;
+}
+
+.search-again-button a {
+  margin: 10px;
+  color: white;
+  display: inline-block;
+}
+
+.search-again-button a:hover {
+  font-weight: normal;
+}

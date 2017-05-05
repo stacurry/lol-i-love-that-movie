@@ -1,0 +1,15 @@
+<h2>That Quote is From: <%= @title %></h2>
+<h3>Here are the Top 10 Quotes from <%= @title %>:</h3>
+<% @quotes.each do |quote_lines| %>
+  <div class="quote-wrapper">
+    <% quote_lines.each do |line| %>
+      <% if line.match(/:\s*\z/) %>
+        <p class="character-name"><%= line %></p>
+      <% elsif line.match(/\A\[.*\]\s*\z/) %>
+        <p class="context-line"><%= line %></p>
+      <% else %>
+        <p class="quote-line"><%= line %></p>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>
