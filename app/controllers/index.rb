@@ -4,7 +4,7 @@ end
 
 get '/quotes' do
   quote = URI.encode(params[:quote])
-  if ( @quotes = MovieQuoteParser.quotes(quote) )
+  if ( @quotes = MovieQuoteParser.quotes(quote))
     @title = MovieQuoteParser.title(quote)
     erb :_quote_display, layout: false
   else

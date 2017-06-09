@@ -12,31 +12,7 @@ h3 {
   margin: 100px auto;
   width: 80%;
   padding: 0px 20px 20px 20px;
-
   display: block;
-}
-
-.header-footer {
-  margin: 0px;
-  padding: 0px;
-  background-color: #4483A5;
-  list-style: none;
-  clear: both;
-}
-
-nav ul {
-  text-align: right;
-  padding: 0px;
-  margin: 0px;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  display: inline-block;
-  padding: 8px;
 }
 
 a {
@@ -58,16 +34,16 @@ header {
   width: 100%;
   border-bottom: 1px solid #4483A5;
   background-color: #4483A5;
+  height: 35px;
 }
 
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: center;
   border-top: 1px solid #4483A5;
-  color: #4483A5;
-  height: 33.33px;
+  background-color: #4483A5;
+  height: 35px;
 }
 
 input[type=submit] {
@@ -81,33 +57,13 @@ input[type=submit] {
 
 input {
   display: block;
+  width: 500px;
   margin: auto;
-  width: 300px;
   margin-bottom: 10px;
   padding: 2px;
-  background: white;
   border: 1px solid #1a1a1a;
   border-radius: 5px;
-}
-
-#link-disguise {
-  outline: none;
-  border: none;
-  background: none;
-  padding: 0px;
-  margin: 0px;
-  width: auto;
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-}
-
-#link-disguise:hover {
-  font-weight: bold;
-}
-
-#logout-form {
-  display: inline;
+  text-align: center;
 }
 
 .error-list {
