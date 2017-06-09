@@ -11,30 +11,12 @@
   <title></title>
 </head>
 <body>
-  <header>
-    <nav class="header-footer">
-      <ul>
-      <% if logged_in? %>
-        <li><a href="/users/<%= current_user.id %>"><%= current_user.name %></a></li>
-        <li>
-          <form id="logout-form" action="/sessions" method="post">
-            <input type="hidden" name="_method" value="delete">
-            <input id="link-disguise" type="submit" value="logout">
-          </form>
-        </li>
-      <% else %>
-        <li><a href="/users/new">register</a></li>
-        <li><a href="/sessions/new">login</a></li>
-      <% end %>
-        <li><a href="/">home</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header></header>
 
   <div class="container">
     <%= yield %>
   </div>
 
-  <footer class="header-footer">LOL</footer>
+  <footer></footer>
 </body>
 </html>

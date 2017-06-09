@@ -44,4 +44,3 @@ module MovieQuoteParser
     end
   end
 end
-
