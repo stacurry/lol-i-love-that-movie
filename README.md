@@ -5,8 +5,11 @@ Have you ever been on the outside of an inside-movie-quote-joke? Do you wish you
 ## Screenshots:
 
 ![Screenshot 1](./readme-images/lol-movie-1.png)
+## 
 ![Screenshot 2](./readme-images/lol-movie-2.png)
+## 
 ![Screenshot 3](./readme-images/lol-movie-3.png)
+## 
 
 ## To Run This Application Locally:
 
